@@ -1,26 +1,59 @@
-import React from "react";
+import React from 'react';
+import Navbar from './Navbar';
+import Jumbotron from './Jumbotron';
+import Card from './Card';
+import Footer from './Footer';
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+  const cardData = [
+    {
+      image: "https://picsum.photos/150/150?random=1",
+      title: "Card 1",
+      text: "This is card 1",
+      buttonText: "Go somewhere"
+    },
+    {
+      image: "https://picsum.photos/150/150?random=2",
+      title: "Card 2",
+      text: "This is card 2",
+      buttonText: "Go somewhere"
+    },
+    {
+      image: "https://picsum.photos/150/150?random=3",
+      title: "Card 3",
+      text: "This is card 3",
+      buttonText: "Go somewhere"
+    },
+
+    {
+      image: "https://picsum.photos/150/150?random=4",
+      title: "Card 4",
+      text: "This is card 4",
+      buttonText: "Go somewhere"
+    }
+  ];
+
+  return (
+    <div>
+      <Navbar />
+      <div className="container mt-4">
+        <Jumbotron />
+        <div className="row">
+          {cardData.map((card, index) => (
+            <div className="col-md-3" key={index}>
+              <Card
+                image={card.image}
+                title={card.title}
+                text={card.text}
+                buttonText={card.buttonText}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;
