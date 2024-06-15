@@ -2,12 +2,22 @@ import React from 'react';
 
 const Jumbotron = () => {
   return (
-    <div className="jumbotron">
-      <h1 className="display-4">Hello, world!</h1>
-      <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <div className="jumbotron text-light">
+      <div className='jumbotronColor'>
+        <h1 className="display-4 text-end">ELITE CARS</h1>
+      </div>
+      <div className='jumbotron2 text-start'>
+        <p className="lead display-5">Exotic and luxury cars.</p>
+      </div>
       <hr className="my-4" />
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <div className='jumbotron3 display-6 text-end'>
+        <h3>WE HAVE IMPORTED CARS THAT ARE UNIQUE IN THE WORLD.</h3>
+      </div>
+      <div className="container">
+        <div className="d-flex justify-content-end">
+          <a className="btn btn-custom btn-lg" href="#" role="button">Contact</a>
+        </div>
+      </div>
     </div>
   );
 };
