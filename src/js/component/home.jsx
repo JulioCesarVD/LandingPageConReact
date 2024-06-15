@@ -3,25 +3,30 @@ import Navbar from './Navbar';
 import Jumbotron from './Jumbotron';
 import Card from './Card';
 import Footer from './Footer';
-
+import cardImage1 from '../../img/pexels-mikebirdy-9761024.jpg';
+import cardImage2 from '../../img/pexels-autorecords-10394786.jpg';
+import cardImage3 from '../../img/pexels-garvin-st-villier-719266-3972755.jpg';
 const Home = () => {
   const cardData = [
     {
-      image: "https://picsum.photos/150/150?random=1",
-      title: "Card 1",
-      text: "This is card 1",
+      image: cardImage1,
+      title: "Ferrari F8 Tributo",
+      text: "V8 potente, 0-60 mph en 2.9 segundos.",
+      price:"$302,500",
       buttonText: "Go somewhere"
     },
     {
-      image: "https://picsum.photos/150/150?random=2",
-      title: "Card 2",
-      text: "This is card 2",
+      image: cardImage2,
+      title: "Lamborghini Evo Spyder",
+      text: "V8 de alto rendimiento, 0 a 60 mph en 2.8 segundos.",
+      price:"$375,000",
       buttonText: "Go somewhere"
     },
     {
-      image: "https://picsum.photos/150/150?random=3",
-      title: "Card 3",
-      text: "This is card 3",
+      image: cardImage3,
+      title: "Corvette Stingray",
+      text: "V8 potente, alcanza 0-60 mph en 3.5 segundos.",
+      price:"$72,500",
       buttonText: "Go somewhere"
     },
 
@@ -29,6 +34,7 @@ const Home = () => {
       image: "https://picsum.photos/150/150?random=4",
       title: "Card 4",
       text: "This is card 4",
+      price:"$302,500",
       buttonText: "Go somewhere"
     }
   ];
@@ -45,6 +51,7 @@ const Home = () => {
                 image={card.image}
                 title={card.title}
                 text={card.text}
+                price={card.price}
                 buttonText={card.buttonText}
               />
             </div>
