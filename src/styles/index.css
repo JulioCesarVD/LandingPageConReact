@@ -1,12 +1,86 @@
+body {
+    background-color: black;
+}
 
-/* 
+.navbar {
+    background-color: rgba(1, 8, 34, 0.938);
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.jumbotronColor {
+    background-color: rgba(1, 10, 24, 0.945);
+}
 
-*/
+.jumbotron2 {
+    background-color: rgba(97, 33, 180, 0.322);
+}
+
+.jumbotron3 {
+    background-color: rgb(1, 10, 24, 0.945);
+    padding: 7px;
+    margin-bottom: 20px;
+}
+
+/* Lato font */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/* Color/UI color variables */
+:root {
+  --white: #ececec;
+  --black: #333333;
+  --yellow: #ffff00;
+  --purple: #8a19ff;
+  --colorPrimary: var(--yellow);
+  --colorSecondary: var(--purple);
+}
+
+/* Split button styles */
+.btn-custom {
+  position: relative;
+  letter-spacing: 0.25em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 28px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-custom::after,
+.btn-custom::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transform: skewX(30deg);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
+}
+
+.btn-custom::before {
+  background-color: var(--colorPrimary);
+  top: -1rem;
+  left: 0rem;
+}
+
+.btn-custom::after {
+  background-color: var(--colorSecondary);
+  top: 1rem;
+  left: 8rem;
+}
+
+.btn-custom:hover::before,
+.btn-custom:hover::after {
+  top: 0;
+  transform: skewx(0deg);
+}
+
+.btn-custom:hover::after {
+  left: 0rem;
+}
+
+.btn-custom:hover::before {
+  left: 8.75rem;
+}
