@@ -20,6 +20,42 @@ body {
     margin-bottom: 20px;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 15rem;
+  height: 22rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.card-img-top {
+  max-width: 100%;
+  max-height: 50%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title, .card-text {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.btn {
+  align-self: center;
+}
+
 /* Lato font */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
