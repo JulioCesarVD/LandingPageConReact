@@ -7,6 +7,8 @@ import cardImage1 from '../../img/pexels-mikebirdy-9761024.jpg';
 import cardImage2 from '../../img/pexels-autorecords-10394786.jpg';
 import cardImage3 from '../../img/pexels-garvin-st-villier-719266-3972755.jpg';
 import cardImage4 from '../../img/pexels-tony-boyd-513947829-16883139.jpg';
+
+
 const Home = () => {
   const cardData = [
     {
@@ -35,7 +37,7 @@ const Home = () => {
       image: cardImage4,
       title: "Lamborghini Revuelto",
       text: "V12, 0 a 62 mph 2.5 seg ",
-      price:"$608,358​",
+      price:"$608,358",
       buttonText: "Go somewhere"
     }
   ];
