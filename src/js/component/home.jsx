@@ -6,35 +6,36 @@ import Footer from './Footer';
 import cardImage1 from '../../img/pexels-mikebirdy-9761024.jpg';
 import cardImage2 from '../../img/pexels-autorecords-10394786.jpg';
 import cardImage3 from '../../img/pexels-garvin-st-villier-719266-3972755.jpg';
+import cardImage4 from '../../img/pexels-tony-boyd-513947829-16883139.jpg';
 const Home = () => {
   const cardData = [
     {
       image: cardImage1,
       title: "Ferrari F8 Tributo",
-      text: "V8 potente, 0-60 mph en 2.9 segundos.",
+      text: "V8,0-60 mph en 2.9 seg.",
       price:"$302,500",
       buttonText: "Go somewhere"
     },
     {
       image: cardImage2,
       title: "Lamborghini Evo Spyder",
-      text: "V8 de alto rendimiento, 0 a 60 mph en 2.8 segundos.",
+      text: "V8, 0 a 60 mph en 2.8 seg.",
       price:"$375,000",
       buttonText: "Go somewhere"
     },
     {
       image: cardImage3,
       title: "Corvette Stingray",
-      text: "V8 potente, alcanza 0-60 mph en 3.5 segundos.",
+      text: "V8 potente, 0-60 mph 3.5 seg.",
       price:"$72,500",
       buttonText: "Go somewhere"
     },
 
     {
-      image: "https://picsum.photos/150/150?random=4",
-      title: "Card 4",
-      text: "This is card 4",
-      price:"$302,500",
+      image: cardImage4,
+      title: "Lamborghini Revuelto",
+      text: "V12, 0 a 62 mph 2.5 seg ",
+      price:"$608,358​",
       buttonText: "Go somewhere"
     }
   ];
