@@ -9,8 +9,10 @@ const Card = ({ image, title, text,price, buttonText }) => {
       <div className="card-body d-flex flex-column">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{text}</p>
-        <h6 className="card-text mt-auto align-self-start">{price}</h6>
-        <a href="#" className="btn btn-primary mt-auto align-self-start">{buttonText}</a>
+        <div class="mt-auto align-self-start">
+                    <h6 class="card-text">{price}</h6>
+                    <a href="#" class="btn btn-primary mt-2">{buttonText}</a>
+                </div>
       </div>
     </div>
   );
