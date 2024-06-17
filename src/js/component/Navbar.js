@@ -1,5 +1,7 @@
 import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
@@ -23,7 +25,7 @@ const Navbar = () => {
           </ul>
           <ul className="navbar-nav me-5">
             <li className="nav-item">
-              <a className="nav-link " href="#"><i className="fas fa-shopping-cart fs-4"></i></a>
+              <a className="nav-link fs-4" href="#"><FontAwesomeIcon icon = {faCartShopping} /></a>
             </li>
           </ul>
         </div>
